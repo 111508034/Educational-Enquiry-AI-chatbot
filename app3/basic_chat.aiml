@@ -1,0 +1,154 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+	 
+	<category>
+    		<pattern>*</pattern>
+    		<template>I don't know how to answer that. Sorry</template>
+	</category>
+
+    	<category>
+		<pattern>WHAT TIME IS IT</pattern>
+		<template>The local time is: <system>date</system></template>
+	</category> 
+	
+	<category>
+		<pattern>HELLO</pattern>
+		<template>Well, hello!</template>
+    	</category>
+    	
+    	<category>
+		<pattern>HELLO *</pattern>
+		<template>Well, hello!</template>
+    	</category>
+    
+    	<category>
+        	<pattern>WHAT ARE YOU</pattern>
+        	<template>I'm a bot!</template>
+    	</category>
+    	
+    	<category>
+		<pattern>WHAT TIME IS IT</pattern>
+		<template>The local time is: <system>date</system></template>
+	</category> 
+	
+	<category>
+        	<pattern>WHAT IS THE TIME</pattern>
+        	<template>
+            		<srai>WHAT TIME IS IT</srai>
+        	</template>
+	</category>    		
+    
+	<category>
+		<pattern>WHEN WAS THE COLLEGE FOUND</pattern>
+        	<template>It was found in 1854.</template>
+    	</category>
+    
+	<category>    	
+        	<pattern>NAME SOME FAMOUS ALUMNI</pattern>
+        	<template>M. Visvesvaraya, Thomas Kailath, Vijay Kelkar, Suhas Patankar.</template>
+    	</category>
+	
+	<category>
+       		<pattern>WHAT ARE * DEPARTMENTS</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/departments"</template>
+    	</category>
+    	
+	<category>
+       		<pattern>WHAT ARE * DEPARTMENTS *</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/departments"</template>
+    	</category>
+    	
+	<category>
+       		<pattern>WHAT * EVENTS * MINDSPARK</pattern>
+        	<template>"Please visit the following link : http://www.mind-spark.org/event.html"</template>
+    	</category>
+    	
+	<category>
+       		<pattern>* EXAM TIMETABLE</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/sites/default/files/ESE%20Time%20Table%20April-%20May%202017.pdf"</template>
+    	</category>
+    	
+    	<category>
+    		<pattern>COMP IT DEPARTMENT FACULTY</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/departments/computerit/faculty"</template>
+        </category>
+    	
+	<category>
+       		<pattern>* FACULTY * COMPUTER DEPARTMENT</pattern>
+        	<template>
+            		<srai>COMP IT DEPARTMENT FACULTY</srai>m>
+        	</template>
+    	</category>
+    	
+    	<category>
+        	<pattern>* FACULTY * IT DEPARTMENT</pattern>
+        	<template>
+            		<srai>COMP IT DEPARTMENT FACULTY</srai>
+        	</template>
+	</category>
+
+    	<category>
+    		<pattern>SYLLABUS</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/departments/computerit/curriculum"</template>
+        </category>
+        
+    	<category>
+        	<pattern>* SYLLABUS * COMPUTER</pattern>
+        	<template>
+            		<srai>SYLLABUS</srai>
+        	</template>
+	</category>
+    	
+    	<category>
+        	<pattern>* SYLLABUS * IT</pattern>
+        	<template>
+            		<srai>SYLLABUS</srai>
+        	</template>
+	</category>
+
+    	<category>
+        	<pattern>* CURRICULUM * COMPUTER</pattern>
+        	<template>
+            		<srai>SYLLABUS</srai>
+        	</template>
+	</category>
+    	
+    	<category>
+        	<pattern>* CURRICULUM * IT</pattern>
+        	<template>
+            		<srai>SYLLABUS</srai>
+        	</template>
+	</category>
+	
+    	<category>
+    		<pattern>* LABORATORIES * COMPUTER DEPARTMENT</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/departments/computerit/laboratories"</template>
+        </category>
+        
+    	<category>
+    		<pattern>* LABORATORIES * IT DEPARTMENT</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/departments/computerit/laboratories"</template>
+        </category>
+    	
+    	<category>
+    		<pattern>* ACADEMIC CALENDAR</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/sites/default/files/txt%2C%20pdf%2C%20docx%2C%20odt%2C%20doc%2C%20wps%2C%20ppt%2C%20pptx%2C%20rar%2C%20tar%2C%20jpeg%2C%20gif%2C%20xlr%2C%20xlsx%2C%20rar%2C%20zip/AcademicCalendar_AY_2016-17.pdf"</template>
+        </category>
+        
+    	<category>
+    		<pattern>* FEE STRUCTURE *</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/academics/fee_structure"</template>
+        </category>
+        
+    	<category>
+    		<pattern>* PREVIOUS * PAPERS</pattern>
+        	<template>"Please visit the following link : http://www.coep.org.in/previousyearquestionpapers/"</template>
+        </category>
+
+    	<category>
+    		<pattern>* DIRECTIONS * COLLEGE</pattern>
+        	<template>"Please visit the following link : https://www.google.co.in/maps/place/College+of+Engineering+Pune/@18.5294045,73.8543688,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc2c0883858b873:0x1d68fbf2cac75519!8m2!3d18.5293994!4d73.8565628?hl=en"</template>
+        </category>
+    
+</aiml>

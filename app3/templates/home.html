@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="jumbo">
+    <h2>College of Engineering, Pune<h2>
+    <h3>An Autonomous Institute of Govt. of Maharashtra<h3>
+  </div>
+  <section>
+    <img class="mySlides" src="../static/img/coep1.jpeg" style="width:940px;height:343px;">
+    <img class="mySlides" src="../static/img/Coep2.jpg" style="width:940px;height:343px;"> 
+    <img class="mySlides" src="../static/img/COEP3.jpg" style="width:940px;height:343px;"> 
+    <img class="mySlides" src="../static/img/cOEP4.PNG" style="width:940px;height:343px;">
+  </section>
+  <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000);
+    }
+  </script>
+
+{% endblock %}
